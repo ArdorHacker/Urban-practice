@@ -13,7 +13,7 @@ class Knight(threading.Thread):
 
         print(f"{self.name}, на нас напали!")
 
-        while enemies:
+        while enemies > 0:
             enemies -= self.power
             days += 1
             print(f"{self.name} сражается {days} день(дня)..., осталось {enemies} воинов.")
